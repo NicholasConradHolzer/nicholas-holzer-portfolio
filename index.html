@@ -8,14 +8,9 @@
 </head>
 
 <body>
-
     <!--Header and Navigation-->
     <header>
-        <h1>
-            <a href="index.html">
-                Nicholas Holzer
-            </a>
-        </h1>
+        <!-- <img src="./assets/images/hero.jpg" alt="Nicholas Holzer on a Sunny Day"> -->
         <nav>
             <ul>
                 <li>
@@ -30,37 +25,52 @@
             </ul>
         </nav>
     </header>
-
-    <!--Hero Section-->
-    <section class="hero" alt=""></section>
-
-
+    <div id="moodSet">
+        <h1>
+            <a id="selfTitle" href="index.html">
+                Nicholas Holzer
+            </a>
+        </h1>
+        <img src="assets/images/blkwht.jpg">
+        <div id="moodCard" class="carderizer">
+            <p>
+                Developer, Coder<br/>
+                and Educator<br/>
+                Using a Diverse Career History<br/>
+                to Deploy Versatility in<br/>
+                Problem Solving
+            </p>
+        </div>
+    </div>
+<!-- <div id="bgGreet"></div> -->
+<main>
     <!--About Section-->
-    <section class="about" id="about-nick">
+    <section class="about">
         
-        <div class="section-title">
-            <h2>
+        <div class="about-pic">
+            <img src="./assets/images/hero.jpg">
+        </div>
+        <div class="info-box">
+            <h2 id="about-nick">
                 About Me
             </h2>
-        </div>
-
-        <article class="info-box">
             <p>
-                My Name is Nicholas Holzer; a student of Wedsite Development, and Computing Technology Enthusiast.
-                My longterm goals include development of my own app systems and breaking ground in new AI cognizing methods.
-                Thank you very much for checking out my portfolio today; enjoy your visit, and reach out if you like what you see!
+                My Name is Nicholas Holzer; a student of Wedsite Development, and Computing Technology Enthusiast.<br/>
+                My longterm goals include development of my own app systems and breaking ground in new AI cognizing methods.<br/>
+                Thank you very much for checking out my portfolio today; enjoy your visit, and <br/>
+                reach out if you like what you see!
             </p>
-        </article>
+        </div>
 
     </section>
 
 
     <!--Work Sample Section-->
-    <main class="work-display" id="work-samples-nick">
+    <section class="work-display">
 
-        <div class="section-title">
-            <h2>
-                About Me
+        <div class="flex-row">
+            <h2 class="section-title" id="work-samples-nick">
+                My Work Samples
             </h2>
         </div>
 
@@ -108,13 +118,13 @@
             <figcaption>The homepage for Horiseon, Inc.; refactored for accsesability, development ease-of-use, and corrective-debugging.</figcaption>
         </figure>
 
-    </main>
+    </section>
 
     <!--Contact Section-->
-    <section class="contact" id="contact-nick">
+    <section class="contact">
 
-        <div class="section-title">
-            <h2>
+        <div class="flex-row">
+            <h2 class="section-title" id="contact-nick">
                 Contact Me
             </h2>
         </div>
@@ -159,11 +169,17 @@
                 <input type="submit" />
             </form>
         </div>
+        
 
     
     </section>
-
-    <footer></footer>
+</main>
+    <footer>
+        <h2>Made by Nicholas Holzer for use only by self.</h2>
+        <div>
+            <p>Accsess <a href="./privacy-policy.html">ReadMe</a></p>
+        </div>
+    </footer>
 
 </body>
 
