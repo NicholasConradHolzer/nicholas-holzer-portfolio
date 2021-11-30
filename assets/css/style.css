@@ -1,8 +1,12 @@
 :root {
     --bg: rgba(147, 255, 221, 0.918);
-    --color1: rgb(124, 124, 85);
+    --color1: rgb(96, 51, 107);
     --color2: rgb(2, 29, 20);
-    --color3: rgba(160, 255, 180, 1.0);
+    --color3: rgb(160, 255, 180);
+    --color4: rgb(220, 238, 153);
+    --colorp1: rgb(245, 208, 245);
+    --colorp2: rgb(202, 80, 202);
+    --colorp3: rgb(150, 76, 150);
 }
 * {
     box-sizing: border-box;
@@ -16,20 +20,10 @@ body {
     overflow-x: hidden;
     text-decoration: none;
 }
-#heroBack{
-    display: flex;
-    justify-content: center;
-    min-height: 100%;
-}
-#heroBack img {
-    display: block;
-    margin: auto;
-    min-height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    top:0;
+h1, h2, h3, h4 {
+    display: inline-block;
+    margin: 0;
     padding: 0;
-    z-index: -999;
 }
 header {
     position: -webkit-sticky;
@@ -37,7 +31,7 @@ header {
     top: 0;
     background-color: var();
     padding: 20px 35px;
-    background-color: var(--color3LB);
+    background-color: var(--color3);
     background-image: url("../images/planetShot4.jpg");
     background-size: cover;
     background-position: center;
@@ -74,13 +68,29 @@ header nav ul li a {
     border-radius: 40px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    box-shadow: 2px 2px 5px darkblue;
 }
 header nav ul li a:hover {
     background: var(--color1);
     color: var(--bg);
     border-radius: 15px;
     text-shadow: none;
-    box-shadow: 0 0 10px;
+    box-shadow: -1px -1px 10px;
+}
+#heroBack{
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+}
+#heroBack img {
+    display: block;
+    margin: auto;
+    min-height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    padding: 0;
+    z-index: -999;
 }
 #hero {
     display: flex;
@@ -89,9 +99,13 @@ header nav ul li a:hover {
     text-align: center;
     margin: 50px auto;
     min-height: 100vh;
+    max-height: 100vh;
 }
 #moodSet {
-justify-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 #selfTitle {
     font-family: 'Brush Script Mt', Arial, Helvetica, sans-serif;
@@ -102,13 +116,13 @@ justify-content: space-evenly;
 }
 #selfTitle:hover {
     color: var(--color2);
-    text-shadow: 2px 2px 15px var(--color3);
-    text-shadow: -2px -2px 18px var(--color1);
+    text-shadow: -2px -2px 15px var(--color3);
 }
 #moodSet img {
-    margin-top: 2vh;
-    border-radius: 47%;
-    box-shadow: 2px 2px 7px darkblue;
+    display: block;
+    margin: 0pt auto;
+    border-radius: 50%;
+    box-shadow: 2px 3px 7px darkblue;
     max-height: 30vh;
 }
 #moodCard section {
@@ -123,21 +137,65 @@ justify-content: space-evenly;
 }
 #moodCard li {
     margin:3vh;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--bg);
     text-shadow: 1px 1px 3px darkblue;
 }
 #about-nick{
+    box-sizing: border-box;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     min-height: 100vh;
+}
+.info-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: var(--color4);
+    background: var(--color1);
+    padding: 24pt;
+    border-radius: 27pt;
 }
 .about-pic img {
     max-height: 30vh;
     border-radius: 24pt;
     margin-left: 5vw;
 }
-
+#about-nick h2 {
+    top: 0;
+    color: var(--color2);
+    background: var(--colorp1);
+    font-family: 'Gill Sans MT','Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 2vw;
+    padding: 5px;
+}
+.info-box section {
+    position: absolute;
+    display: inline-block;
+    background: var(--colorp2);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 13pt 0 15pt 0;
+    margin-right: 20vw;
+    background-clip: padding-box;
+}
+.info-box article {
+    display: inline-block;
+    background: var(--colorp3);
+    padding: 6pt;
+    background-clip: padding-box;
+}
+.info-box p {
+    line-height: 1.4;
+}
+#aboutCard {
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 53);
+}
