@@ -108,19 +108,23 @@ header nav ul li a:hover {
     max-height: 100vh;
 }
 #selfTitle {
+    flex: 1 1 20%;
+    white-space: nowrap;
     font-family: 'Brush Script Mt', Arial, Helvetica, sans-serif;
     color: var(--color3);
     text-shadow: 2px 2px 7px darkblue;
     text-decoration: none;
-    font-size: 14vh;
+    font-size: 7vw;
 }
 #selfTitle:hover {
     color: var(--color2);
     text-shadow: -2px -2px 15px var(--color3);
 }
 #moodSet img {
+    flex: 0 0 33%;
+    font-size: 5vh;
     display: block;
-    margin: 0pt auto;
+    margin: 10pt auto 0pt auto;
     border-radius: 50%;
     box-shadow: 2px 3px 7px darkblue;
     max-height: 30vh;
@@ -129,6 +133,7 @@ header nav ul li a:hover {
     margin: 7vh;
 }
 #moodCard ul {
+    flex: 0 0 33%;
     font-size: 5vh;
     list-style-type: none;
     margin: 5vh;
@@ -136,6 +141,7 @@ header nav ul li a:hover {
     border-bottom: 5px darkblue;
 }
 #moodCard li {
+    flex: 0 0 33%;
     margin:3vh;
     color: var(--bg);
     text-shadow: 1px 1px 3px darkblue;
