@@ -4,7 +4,7 @@
     --color2: rgb(2, 29, 20);
     --color3: rgb(160, 255, 180);
     --color4: rgb(220, 238, 153);
-    --colorp1: rgb(245, 208, 245);
+    --colorp1: rgb(9, 61, 45);
     --colorp2: rgb(202, 80, 202);
     --colorp3: rgb(150, 76, 150);
 }
@@ -225,8 +225,9 @@ header nav ul li a:hover {
 /**/
 
 /*Works Display*/
-.work-display {
+.work-display , footer {
     box-sizing: border-box;
+    background-color: var(--colorp1);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
