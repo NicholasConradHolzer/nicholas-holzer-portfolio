@@ -10,8 +10,9 @@
 <body>
     <!--Header and Navigation-->
 <div id="heroBack">
-    <img src="assets/images/planetShot4.jpg">
+    <img class="chapter" src="assets/images/planetShot4.jpg">
 </div>
+
     <header>
         <!-- <img src="./assets/images/hero.jpg" alt="Nicholas Holzer on a Sunny Day"> -->
         <nav>
@@ -28,7 +29,8 @@
             </ul>
         </nav>
     </header>
-<div id="hero">
+
+<div id="hero" class="chapter">
     <div id="moodSet">
         <h1>
             <a id="selfTitle" href="index.html">
@@ -48,7 +50,7 @@
 <!-- <div id="bgGreet"></div> -->
 <main>
     <!--About Section-->
-    <section id="about-nick" class="about">
+    <section id="about-nick" class="chapter">
         <h2>
             About Me
         </h2>
@@ -57,7 +59,6 @@
                 <img src="./assets/images/hero.jpg">
             </div>
             <div class="info-box">
-                
                 <section>
                     <p>
                         Using a Diverse Career History<br/>
@@ -80,65 +81,73 @@
 
 
     <!--Work Sample Section-->
-    <section class="work-display">
+    <section id="work-samples-nick" class="work-display chapter">
 
-        <div class="flex-row">
-            <h2 class="section-title" id="work-samples-nick">
+        <div id="samplesHolder">
+            <h2 class="section-title">
                 My Work Samples
             </h2>
         </div>
+        <div id="projectHolder">
+            <figure class="project-panel">
+                <h3>
+                    Fanpage: Nyango-Starr
+                </h3>
+                <div class="projectPortal">
+                    <a href="https://nicholasconradholzer.github.io/NHolzerNyangoStarr/">
+                        <img src="./assets/images/project-nyango.png" 
+                        alt="Fanpage for Nyango-Starr; pic acts as link">
+                    </a>
+                </div>
+                <figcaption>A Fanpage for Japanese Mascot/Drummer/Apple-Cat Nyango Starr; featuring embedded youtube video as a background color for the site.</figcaption>
+            </figure>
 
-        <figure class="project-panel">
-            <h3>
-                Fanpage: Nyango-Starr
-            </h3>
-            <a href="https://nicholasconradholzer.github.io/NHolzerNyangoStarr/">
-                <img src="./assets/images/project-nyango.png" 
-                alt="Fanpage for Nyango-Starr; pic acts as link">
-            </a>
-            <figcaption>A Fanpage for Japanese Mascot/Drummer/Apple-Cat Nyango Starr; featuring embedded youtube video as a background color for the site.</figcaption>
-        </figure>
+            <figure class="project-panel">
+                <h3>
+                    My "Watch-the-Box" Page
+                </h3>
+                <div class="projectPortal">
+                    <a href="https://nicholasconradholzer.github.io/boxManipulator/">
+                        <img src="./assets/images/project-box.PNG" 
+                        alt="">
+                    </a>
+                </div>
+                <figcaption>A "Watch-the-Box" page; with buttons that use javascript to directly alter the CSS styling of a colored-box</figcaption>
+            </figure>
 
-        <figure class="project-panel">
-            <h3>
-                My "Watch-the-Box" Page
-            </h3>
-            <a href="https://nicholasconradholzer.github.io/boxManipulator/">
-                <img src="./assets/images/project-box.PNG" 
-                alt="">
-            </a>
-            <figcaption>A "Watch-the-Box" page; with buttons that use javascript to directly alter the CSS styling of a colored-box</figcaption>
-        </figure>
+            <figure class="project-panel">
+                <h3>
+                    Homepage+Privacy Policy: Run-Buddy, Inc.
+                </h3>
+                <div class="projectPortal">
+                    <a href="https://nicholasconradholzer.github.io/run-buddy/">
+                        <img src="./assets/images/project-runbuddy.PNG" 
+                        alt="">
+                    </a>
+                </div>
+                <figcaption>The homepage and privacy policy page of Run-Buddy, Inc., featuring advanced applications of CSS for both user responsiveness and screensize-disparity formatting.</figcaption>
+            </figure>
 
-        <figure class="project-panel">
-            <h3>
-                Homepage+Privacy Policy: Run-Buddy, Inc.
-            </h3>
-            <a href="https://nicholasconradholzer.github.io/run-buddy/">
-                <img src="./assets/images/project-runbuddy.PNG" 
-                alt="">
-            </a>
-            <figcaption>The homepage and privacy policy page of Run-Buddy, Inc., featuring advanced applications of CSS for both user responsiveness and screensize-disparity formatting.</figcaption>
-        </figure>
-
-        <figure class="project-panel">
-            <h3>
-                Homepage: Horiseon, Inc.
-            </h3>
-            <a href="https://nicholasconradholzer.github.io/Horiseon-refactored.home/">
-                <img src="./assets/images/project-horiseon.PNG" 
-                alt="">
-            </a>
-            <figcaption>The homepage for Horiseon, Inc.; refactored for accsesability, development ease-of-use, and corrective-debugging.</figcaption>
-        </figure>
-
+            <figure class="project-panel">
+                <h3>
+                    Homepage: Horiseon, Inc.
+                </h3>
+                <div class="projectPortal">
+                    <a href="https://nicholasconradholzer.github.io/Horiseon-refactored.home/">
+                        <img src="./assets/images/project-horiseon.PNG" 
+                        alt="">
+                    </a>
+                </div>
+                <figcaption>The homepage for Horiseon, Inc.; refactored for accsesability, development ease-of-use, and corrective-debugging.</figcaption>
+            </figure>
+        </div>
     </section>
 
     <!--Contact Section-->
-    <section class="contact">
+    <section class="contact chapter">
 
-        <div class="flex-row">
-            <h2 class="section-title" id="contact-nick">
+        <div id="contact-nick">
+            <h2 class="section-title">
                 Contact Me
             </h2>
         </div>
